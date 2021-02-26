@@ -1,0 +1,1047 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>eigengraus-essential-establishment-generator</title>
+	<meta name="description" content="Documentation for eigengraus-essential-establishment-generator">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">eigengraus-essential-establishment-generator</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>eigengraus-essential-establishment-generator</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#" id="" style="color: inherit; text-decoration: none;">
+					<h1><img src="https://i.imgur.com/oVQHgTP.png" alt=""></h1>
+				</a>
+				<a href="#a-tabletop-generator-unlike-any-other-game_die" id="a-tabletop-generator-unlike-any-other-game_die" style="color: inherit; text-decoration: none;">
+					<h3>A Tabletop Generator Unlike Any Other :game_die:</h3>
+				</a>
+				<p><a href="https://eigengrausgenerator.com/">Eigengrau&#39;s Essential Establishment Generator</a>, or EEEG for short, is a tabletop procedural generation tool for towns, npcs, and more. It creates paragraphs of text suitable to be read directly to the players during a game. No longer do you have to simply describe a generic, unnamed tavern as &quot;small&quot;- this is the sort of stuff that you can read out instead:</p>
+				<p><img src="https://i.imgur.com/UJXLUOT.png" alt=""></p>
+				<p><strong>What It&#39;s For</strong></p>
+				<ul>
+					<li>Generate thousands of unique towns for table play</li>
+					<li>Create new plothooks for games</li>
+					<li>Generate new NPCs to flesh out existing places</li>
+					<li>Help new and veteran DMs come up with fresh ideas for their table</li>
+				</ul>
+				<a href="#live-build-rocket" id="live-build-rocket" style="color: inherit; text-decoration: none;">
+					<h2>Live Build :rocket:</h2>
+				</a>
+				<p>Go to <a href="https://eigengrausgenerator.com/">https://eigengrausgenerator.com/</a> to see the most current live build of EEEG in action!</p>
+				<p>NOTE: The live build is often several weeks or months behind the current build here on GitHub. Compile the generator locally to see all the latest features and updates!</p>
+				<a href="#community-family" id="community-family" style="color: inherit; text-decoration: none;">
+					<h2>Community :family:</h2>
+				</a>
+				<p><strong>Join our Discord to talk about the project in real time</strong></p>
+				<ul>
+					<li>Learn more about the project</li>
+					<li>Ask questions and learn from other contributors</li>
+					<li>Show off your work</li>
+				</ul>
+				<p><strong><a href="https://discord.gg/A543VC5">DISCORD</a></strong></p>
+				<p>The Discord is where the main realtime discussion happens- GitHub Discussions is for more in-depth discussion about future features.</p>
+				<p>Also consider joining the <a href="https://www.reddit.com/r/EigengrausGenerator">subreddit.</a></p>
+				<a href="#contributing-black_nib" id="contributing-black_nib" style="color: inherit; text-decoration: none;">
+					<h2>Contributing :black_nib:</h2>
+				</a>
+				<p>We love getting pull requests! You can find out more about contributing to the project <a href="https://github.com/ryceg/Eigengrau-s-Essential-Establishment-Generator/wiki/Contributing">here.</a> </p>
+				<p>You will need a recent version of <a href="https://nodejs.org">NodeJS</a>,
+				as well as <a href="https://yarnpkg.com/">Yarn</a>, which you can install by running <code>npm install -g yarn</code> once you have NodeJS installed.</p>
+				<p>Once you&#39;ve cloned the project, run <code>yarn install</code> to install the required dependencies.</p>
+				<p>You will also need to download Tweego.
+					You can do so so either by running <code>yarn install-compiler</code>,
+					or by downloading it from <a href="https://www.motoslave.net/tweego/">here.</a> and placing the contents inside <em>/Eigengrau-s-Essential-Establishment-Generator/.twine</em>.
+				if the <em>.twine</em> folder does not already exist, just create one.</p>
+				<ul>
+					<li>Use <code>yarn test</code> to run tests.</li>
+					<li>Use <code>yarn build</code> to build the output files. (Note that this will return a File Not Found error, but it is working) The entire thing will output to the /gh-pages folder as the index.html file.</li>
+					<li>Use <code>yarn start</code> to start a development build that automatically rebuilds on file changes.</li>
+				</ul>
+				<p>If you don&#39;t want to code, that&#39;s okay! The Generator is built out of a novel&#39;s worth of words, and we&#39;re always in need of more descriptions. You can find writing tasks <a href="https://github.com/ryceg/Eigengrau-s-Essential-Establishment-Generator/issues?q=is%3Aissue+is%3Aopen+label%3AWriting">here.</a></p>
+				<p>You can also find easy work to do on the generator <a href="https://github.com/ryceg/Eigengrau-s-Essential-Establishment-Generator/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22">here.</a></p>
+				<a href="#built-with-hammer" id="built-with-hammer" style="color: inherit; text-decoration: none;">
+					<h2>Built With :hammer:</h2>
+				</a>
+				<ul>
+					<li><a href="https://twinery.org/">Twine</a> - The front end framework </li>
+					<li><a href="https://www.motoslave.net/sugarcube/2/">Sugarcube 2</a> - A language for Twine</li>
+					<li><a href="https://www.motoslave.net/tweego/">TweeGo</a> - Twine command line compiler</li>
+				</ul>
+				<hr>
+				<p>If you can&#39;t contribute pull requests consider supporting the Generator through <a href="https://www.patreon.com/eigengrausgenerator">Patreon</a></p>
+				<p>We hope that you find it useful!</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class">
+						<a href="classes/assertionerror.html" class="tsd-kind-icon">Assertion<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/alchemist.html" class="tsd-kind-icon">Alchemist</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/building.html" class="tsd-kind-icon">Building</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/buildingmaterial.html" class="tsd-kind-icon">Building<wbr>Material</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/buildingrelationship.html" class="tsd-kind-icon">Building<wbr>Relationship</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/buildingrolls.html" class="tsd-kind-icon">Building<wbr>Rolls</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/buildingroof.html" class="tsd-kind-icon">Building<wbr>Roof</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/buildingstructure.html" class="tsd-kind-icon">Building<wbr>Structure</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/classtraits.html" class="tsd-kind-icon">Class<wbr>Traits</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/construct.html" class="tsd-kind-icon">Construct</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/constructutils.html" class="tsd-kind-icon">Construct<wbr>Utils</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/deity.html" class="tsd-kind-icon">Deity</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/faction.html" class="tsd-kind-icon">Faction</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/factiontypedata.html" class="tsd-kind-icon">Faction<wbr>Type<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/family.html" class="tsd-kind-icon">Family</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/familymember.html" class="tsd-kind-icon">Family<wbr>Member</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/fiftheditionbookinfo.html" class="tsd-kind-icon">Fifth<wbr>Edition<wbr>Book<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/generalstore.html" class="tsd-kind-icon">General<wbr>Store</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/guardhouse.html" class="tsd-kind-icon">Guardhouse</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/lifestylestandard.html" class="tsd-kind-icon">Lifestyle<wbr>Standard</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/livery.html" class="tsd-kind-icon">Livery</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/marriage.html" class="tsd-kind-icon">Marriage</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/materialtype.html" class="tsd-kind-icon">Material<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/npc.html" class="tsd-kind-icon">NPC</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/namesake.html" class="tsd-kind-icon">Namesake</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/npcrelationship.html" class="tsd-kind-icon">Npc<wbr>Relationship</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/pantheon.html" class="tsd-kind-icon">Pantheon</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/profession.html" class="tsd-kind-icon">Profession</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/relationship.html" class="tsd-kind-icon">Relationship</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/resourcetype.html" class="tsd-kind-icon">Resource<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/road.html" class="tsd-kind-icon">Road</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/roaddata.html" class="tsd-kind-icon">Road<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/rooftype.html" class="tsd-kind-icon">Roof<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/seasondata.html" class="tsd-kind-icon">Season<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/tavern.html" class="tsd-kind-icon">Tavern</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/terraindata.html" class="tsd-kind-icon">Terrain<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/town.html" class="tsd-kind-icon">Town</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/tree.html" class="tsd-kind-icon">Tree</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/weather.html" class="tsd-kind-icon">Weather</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/rollsdata.html" class="tsd-kind-icon">rolls<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#agename" class="tsd-kind-icon">Age<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#alignments" class="tsd-kind-icon">Alignments</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#alignmentsabbreviated" class="tsd-kind-icon">Alignments<wbr>Abbreviated</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#backgroundname" class="tsd-kind-icon">Background<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#biome" class="tsd-kind-icon">Biome</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#classname" class="tsd-kind-icon">Class<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#clericdomains" class="tsd-kind-icon">Cleric<wbr>Domains</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#currencyabbreviated" class="tsd-kind-icon">Currency<wbr>Abbreviated</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#currencyfull" class="tsd-kind-icon">Currency<wbr>Full</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#deepreadonly" class="tsd-kind-icon">Deep<wbr>Readonly</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#deitystatus" class="tsd-kind-icon">Deity<wbr>Status</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#economicideology" class="tsd-kind-icon">Economic<wbr>Ideology</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#economicideologyist" class="tsd-kind-icon">Economic<wbr>IdeologyIST</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#factionresource" class="tsd-kind-icon">Faction<wbr>Resource</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#factiontype" class="tsd-kind-icon">Faction<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#fiftheditionabbr" class="tsd-kind-icon">Fifth<wbr>Edition<wbr>Abbr</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#gendername" class="tsd-kind-icon">Gender<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#keysmatching" class="tsd-kind-icon">Keys<wbr>Matching</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#lifestylestandardname" class="tsd-kind-icon">Lifestyle<wbr>Standard<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#materialtypes" class="tsd-kind-icon">Material<wbr>Types</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#pantheontypes" class="tsd-kind-icon">Pantheon<wbr>Types</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#partialrecord" class="tsd-kind-icon">Partial<wbr>Record</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#politicalideology" class="tsd-kind-icon">Political<wbr>Ideology</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#politicalideologyic" class="tsd-kind-icon">Political<wbr>IdeologyIC</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#politicalsource" class="tsd-kind-icon">Political<wbr>Source</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#professionnames" class="tsd-kind-icon">Profession<wbr>Names</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#professionsector" class="tsd-kind-icon">Profession<wbr>Sector</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#professiontype" class="tsd-kind-icon">Profession<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#racename" class="tsd-kind-icon">Race<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#religionstrength" class="tsd-kind-icon">Religion<wbr>Strength</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#roadmaterialtype" class="tsd-kind-icon">Road<wbr>Material<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#roadtype" class="tsd-kind-icon">Road<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#rollarray" class="tsd-kind-icon">Roll<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#rolldata" class="tsd-kind-icon">Roll<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#seasons" class="tsd-kind-icon">Seasons</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#socialclassname" class="tsd-kind-icon">Social<wbr>Class<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#systemtype" class="tsd-kind-icon">System<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#thresholdtable" class="tsd-kind-icon">Threshold<wbr>Table</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#towntype" class="tsd-kind-icon">Town<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#vices" class="tsd-kind-icon">Vices</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#virtues" class="tsd-kind-icon">Virtues</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#virtuesvices" class="tsd-kind-icon">Virtues<wbr>Vices</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#weightrecord" class="tsd-kind-icon">Weight<wbr>Record</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#wizardschools" class="tsd-kind-icon">Wizard<wbr>Schools</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#worldtype" class="tsd-kind-icon">World<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#clericdomain" class="tsd-kind-icon">Cleric<wbr>Domain</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#wizardschool" class="tsd-kind-icon">Wizard<wbr>School</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#alchemistdata" class="tsd-kind-icon">alchemist<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#articles" class="tsd-kind-icon">articles</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#backgroundtraits" class="tsd-kind-icon">background<wbr>Traits</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#bandits" class="tsd-kind-icon">bandits</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#bodyparts" class="tsd-kind-icon">body<wbr>Parts</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#books" class="tsd-kind-icon">books</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#bunny" class="tsd-kind-icon">bunny</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#cabin" class="tsd-kind-icon">cabin</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#cat" class="tsd-kind-icon">cat</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#cavern" class="tsd-kind-icon">cavern</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#cheese" class="tsd-kind-icon">cheese</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#classtraits" class="tsd-kind-icon">class<wbr>Traits</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#colours" class="tsd-kind-icon">colours</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#economicpairs" class="tsd-kind-icon">economic<wbr>Pairs</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#factiondata" class="tsd-kind-icon">faction<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#factionsliders" class="tsd-kind-icon">faction<wbr>Sliders</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#familyrelationships" class="tsd-kind-icon">family<wbr>Relationships</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#flora" class="tsd-kind-icon">flora</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#genderdata" class="tsd-kind-icon">gender<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#generalstore" class="tsd-kind-icon">general<wbr>Store</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#ghost" class="tsd-kind-icon">ghost</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#goblin" class="tsd-kind-icon">goblin</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#goblins" class="tsd-kind-icon">goblins</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#guardhousedata" class="tsd-kind-icon">guardhouse<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#horse" class="tsd-kind-icon">horse</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#inventory" class="tsd-kind-icon">inventory</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#lifestylestandards" class="tsd-kind-icon">lifestyle<wbr>Standards</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#market" class="tsd-kind-icon">market</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#marriagepools" class="tsd-kind-icon">marriage<wbr>Pools</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#matchfirst" class="tsd-kind-icon">match<wbr>First</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#medal" class="tsd-kind-icon">medal</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#newspaper" class="tsd-kind-icon">newspaper</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#ogre" class="tsd-kind-icon">ogre</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#orcs" class="tsd-kind-icon">orcs</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#pastry" class="tsd-kind-icon">pastry</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#patreoncharacters" class="tsd-kind-icon">patreon<wbr>Characters</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#personalitytraits" class="tsd-kind-icon">personality<wbr>Traits</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#politicalideologypairs" class="tsd-kind-icon">political<wbr>Ideology<wbr>Pairs</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#professiontraits" class="tsd-kind-icon">profession<wbr>Traits</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#professions" class="tsd-kind-icon">professions</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#racetraits" class="tsd-kind-icon">race<wbr>Traits</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#religion" class="tsd-kind-icon">religion</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#roads" class="tsd-kind-icon">roads</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#socialclass" class="tsd-kind-icon">social<wbr>Class</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#spider" class="tsd-kind-icon">spider</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#structuredata" class="tsd-kind-icon">structure<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#terrain" class="tsd-kind-icon">terrain</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#towndata" class="tsd-kind-icon">town<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#traitdescriptions" class="tsd-kind-icon">trait<wbr>Descriptions</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#traits" class="tsd-kind-icon">traits</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#treasuremap" class="tsd-kind-icon">treasure<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#tree" class="tsd-kind-icon">tree</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#urldata" class="tsd-kind-icon">url<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#weather" class="tsd-kind-icon">weather</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#wolf" class="tsd-kind-icon">wolf</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#addtippyaccessibility" class="tsd-kind-icon">add<wbr>Tippy<wbr>Accessibility</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#alchemistmodifiers" class="tsd-kind-icon">alchemist<wbr>Modifiers</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#applyfmtotrait" class="tsd-kind-icon">applyFMto<wbr>Trait</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#assert" class="tsd-kind-icon">assert</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#assign" class="tsd-kind-icon">assign</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#assignfunctionalgenderroll" class="tsd-kind-icon">assign<wbr>Functional<wbr>Gender<wbr>Roll</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#breakgendernorms" class="tsd-kind-icon">break<wbr>Gender<wbr>Norms</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#calcpercentage" class="tsd-kind-icon">calc<wbr>Percentage</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#capitalizefirstletter" class="tsd-kind-icon">capitalize<wbr>First<wbr>Letter</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#clamp" class="tsd-kind-icon">clamp</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#clamprolls" class="tsd-kind-icon">clamp<wbr>Rolls</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#closestmatch" class="tsd-kind-icon">closest<wbr>Match</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#contentsfetcher" class="tsd-kind-icon">contents<wbr>Fetcher</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createalchemistname" class="tsd-kind-icon">create<wbr>Alchemist<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createalchemy" class="tsd-kind-icon">create<wbr>Alchemy</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createallies" class="tsd-kind-icon">create<wbr>Allies</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#createautotippy" class="tsd-kind-icon">create<wbr>Auto<wbr>Tippy</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createbackground" class="tsd-kind-icon">create<wbr>Background</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createbuilding" class="tsd-kind-icon">create<wbr>Building</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createbuildingrelationship" class="tsd-kind-icon">create<wbr>Building<wbr>Relationship</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createclass" class="tsd-kind-icon">create<wbr>Class</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createcolour" class="tsd-kind-icon">create<wbr>Colour</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createdescriptors" class="tsd-kind-icon">create<wbr>Descriptors</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createfamily" class="tsd-kind-icon">create<wbr>Family</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createfamilylifestyle" class="tsd-kind-icon">create<wbr>Family<wbr>Lifestyle</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createleadergroup" class="tsd-kind-icon">create<wbr>Leader<wbr>Group</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createlifestylestandards" class="tsd-kind-icon">create<wbr>Lifestyle<wbr>Standards</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createlivery" class="tsd-kind-icon">create<wbr>Livery</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#createmagic" class="tsd-kind-icon">create<wbr>Magic</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createname" class="tsd-kind-icon">create<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createpersonality" class="tsd-kind-icon">create<wbr>Personality</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createpubrumour" class="tsd-kind-icon">create<wbr>Pub<wbr>Rumour</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createreligiosity" class="tsd-kind-icon">create<wbr>Religiosity</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createring" class="tsd-kind-icon">create<wbr>Ring</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createrivals" class="tsd-kind-icon">create<wbr>Rivals</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createroad" class="tsd-kind-icon">create<wbr>Road</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createroleplayquestion" class="tsd-kind-icon">create<wbr>Roleplay<wbr>Question</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createsocialclass" class="tsd-kind-icon">create<wbr>Social<wbr>Class</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createstructure" class="tsd-kind-icon">create<wbr>Structure</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createtavernname" class="tsd-kind-icon">create<wbr>Tavern<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createtippy" class="tsd-kind-icon">create<wbr>Tippy</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createtippyfull" class="tsd-kind-icon">create<wbr>Tippy<wbr>Full</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createtippyword" class="tsd-kind-icon">create<wbr>Tippy<wbr>Word</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createtownreligion" class="tsd-kind-icon">create<wbr>Town<wbr>Religion</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createtrap" class="tsd-kind-icon">create<wbr>Trap</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#cullbuildings" class="tsd-kind-icon">cull<wbr>Buildings</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#deepfreeze" class="tsd-kind-icon">deep<wbr>Freeze</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#definerolldatagetter" class="tsd-kind-icon">define<wbr>Roll<wbr>Data<wbr>Getter</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#deityiswas" class="tsd-kind-icon">deity<wbr>IsWas</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#deitystatus" class="tsd-kind-icon">deity<wbr>Status</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#deityusesused" class="tsd-kind-icon">deity<wbr>Uses<wbr>Used</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#deletebuildingrelationship" class="tsd-kind-icon">delete<wbr>Building<wbr>Relationship</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#dice" class="tsd-kind-icon">dice</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#fetchdeity" class="tsd-kind-icon">fetch<wbr>Deity</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#fetchgender" class="tsd-kind-icon">fetch<wbr>Gender</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#fetchprofessionchance" class="tsd-kind-icon">fetch<wbr>Profession<wbr>Chance</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#fetchprofessions" class="tsd-kind-icon">fetch<wbr>Professions</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#fetchrace" class="tsd-kind-icon">fetch<wbr>Race</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#filternpcbyprofession" class="tsd-kind-icon">filter<wbr>Npc<wbr>ByProfession</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#filternull" class="tsd-kind-icon">filter<wbr>Null</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#findbuilding" class="tsd-kind-icon">find<wbr>Building</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#findbuildingindex" class="tsd-kind-icon">find<wbr>Building<wbr>Index</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#findbuildingrelationship" class="tsd-kind-icon">find<wbr>Building<wbr>Relationship</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#findchildrace" class="tsd-kind-icon">find<wbr>Child<wbr>Race</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#findinarray" class="tsd-kind-icon">find<wbr>InArray</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#findincontainer" class="tsd-kind-icon">find<wbr>InContainer</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#findindexinarray" class="tsd-kind-icon">find<wbr>Index<wbr>InArray</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#findparentraces" class="tsd-kind-icon">find<wbr>Parent<wbr>Races</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#findpartnerrace" class="tsd-kind-icon">find<wbr>Partner<wbr>Race</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#findprofession" class="tsd-kind-icon">find<wbr>Profession</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#first" class="tsd-kind-icon">first</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#firstcharacter" class="tsd-kind-icon">first<wbr>Character</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#fm" class="tsd-kind-icon">fm</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#formatpercentile" class="tsd-kind-icon">format<wbr>Percentile</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#freeze" class="tsd-kind-icon">freeze</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#generalstoremodifiers" class="tsd-kind-icon">general<wbr>Store<wbr>Modifiers</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#generalstorerenders" class="tsd-kind-icon">general<wbr>Store<wbr>Renders</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#generatebuildingmaterial" class="tsd-kind-icon">generate<wbr>Building<wbr>Material</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#getageinyears" class="tsd-kind-icon">get<wbr>Age<wbr>InYears</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#getallcolours" class="tsd-kind-icon">get<wbr>All<wbr>Colours</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#getalltraits" class="tsd-kind-icon">get<wbr>All<wbr>Traits</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#getbuildingtier" class="tsd-kind-icon">get<wbr>Building<wbr>Tier</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#getdeity" class="tsd-kind-icon">get<wbr>Deity</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#getmarriages" class="tsd-kind-icon">get<wbr>Marriages</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#getnpcgender" class="tsd-kind-icon">get<wbr>Npc<wbr>Gender</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#getoppositegender" class="tsd-kind-icon">get<wbr>Opposite<wbr>Gender</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#getpolice" class="tsd-kind-icon">get<wbr>Police</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#getpredominantrace" class="tsd-kind-icon">get<wbr>Predominant<wbr>Race</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#getrandomvalue" class="tsd-kind-icon">get<wbr>Random<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#getreligiositydescription" class="tsd-kind-icon">get<wbr>Religiosity<wbr>Description</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#getsellingtalk" class="tsd-kind-icon">get<wbr>Selling<wbr>Talk</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#gettavernsin" class="tsd-kind-icon">get<wbr>Tavern<wbr>Sin</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#gettaxrate" class="tsd-kind-icon">get<wbr>Tax<wbr>Rate</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#gettownmaterial" class="tsd-kind-icon">get<wbr>Town<wbr>Material</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#gettrait" class="tsd-kind-icon">get<wbr>Trait</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#gettraitdescription" class="tsd-kind-icon">get<wbr>Trait<wbr>Description</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#gettraitsreadout" class="tsd-kind-icon">get<wbr>Traits<wbr>Readout</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#getuuid" class="tsd-kind-icon">getUUID</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#initsexistprofession" class="tsd-kind-icon">init<wbr>Sexist<wbr>Profession</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#isdefined" class="tsd-kind-icon">is<wbr>Defined</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#isdominantgender" class="tsd-kind-icon">is<wbr>Dominant<wbr>Gender</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#isofage" class="tsd-kind-icon">is<wbr>OfAge</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#isundefined" class="tsd-kind-icon">is<wbr>Undefined</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#keys" class="tsd-kind-icon">keys</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#knewparents" class="tsd-kind-icon">knew<wbr>Parents</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#last" class="tsd-kind-icon">last</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#linguisticdrift" class="tsd-kind-icon">linguistic<wbr>Drift</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#makelist" class="tsd-kind-icon">make<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#npcgrossincome" class="tsd-kind-icon">npc<wbr>Gross<wbr>Income</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#npclifestyleexpenses" class="tsd-kind-icon">npc<wbr>Lifestyle<wbr>Expenses</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#npclifestylestandard" class="tsd-kind-icon">npc<wbr>Lifestyle<wbr>Standard</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#npcnetincome" class="tsd-kind-icon">npc<wbr>Net<wbr>Income</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#npcprofit" class="tsd-kind-icon">npc<wbr>Profit</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#npctaxrate" class="tsd-kind-icon">npc<wbr>Tax<wbr>Rate</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#npctotallifestyleexpenses" class="tsd-kind-icon">npc<wbr>Total<wbr>Lifestyle<wbr>Expenses</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#parsetraitintosentences" class="tsd-kind-icon">parse<wbr>Trait<wbr>Into<wbr>Sentences</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#personalitytraitexists" class="tsd-kind-icon">personality<wbr>Trait<wbr>Exists</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#politicsweightedroll" class="tsd-kind-icon">politics<wbr>Weighted<wbr>Roll</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#random" class="tsd-kind-icon">random</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#randomfloat" class="tsd-kind-icon">random<wbr>Float</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#readoutlivery" class="tsd-kind-icon">readout<wbr>Livery</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#removefromarray" class="tsd-kind-icon">remove<wbr>From<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#removefromarraybypredicate" class="tsd-kind-icon">remove<wbr>From<wbr>Array<wbr>ByPredicate</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#repeat" class="tsd-kind-icon">repeat</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#rollfromtable" class="tsd-kind-icon">roll<wbr>From<wbr>Table</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#setage" class="tsd-kind-icon">set<wbr>Age</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#setfactionage" class="tsd-kind-icon">set<wbr>Faction<wbr>Age</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#setfactioninfluence" class="tsd-kind-icon">set<wbr>Faction<wbr>Influence</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#setfactionjoinstats" class="tsd-kind-icon">set<wbr>Faction<wbr>Join<wbr>Stats</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#setfactionmisc" class="tsd-kind-icon">set<wbr>Faction<wbr>Misc</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#setfactionname" class="tsd-kind-icon">set<wbr>Faction<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#setfactionreputation" class="tsd-kind-icon">set<wbr>Faction<wbr>Reputation</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#setfactionresources" class="tsd-kind-icon">set<wbr>Faction<wbr>Resources</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#setfactionsize" class="tsd-kind-icon">set<wbr>Faction<wbr>Size</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#setfactionstability" class="tsd-kind-icon">set<wbr>Faction<wbr>Stability</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#setmaterialprobability" class="tsd-kind-icon">set<wbr>Material<wbr>Probability</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#setrace" class="tsd-kind-icon">set<wbr>Race</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#setrandom" class="tsd-kind-icon">set<wbr>Random</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#setrandomfloat" class="tsd-kind-icon">set<wbr>Random<wbr>Float</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#sortarray" class="tsd-kind-icon">sort<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#sumweights" class="tsd-kind-icon">sum<wbr>Weights</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#tavernmodifiers" class="tsd-kind-icon">tavern<wbr>Modifiers</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#tavernrooms" class="tsd-kind-icon">tavern<wbr>Rooms</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#tavernsleep" class="tsd-kind-icon">tavern<wbr>Sleep</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#totitlecase" class="tsd-kind-icon">to<wbr>Title<wbr>Case</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#towndemographics" class="tsd-kind-icon">town<wbr>Demographics</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#townrender" class="tsd-kind-icon">town<wbr>Render</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#updatedemographics" class="tsd-kind-icon">update<wbr>Demographics</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#updatetownsociopolitics" class="tsd-kind-icon">update<wbr>Town<wbr>Socio<wbr>Politics</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#validatenpcgender" class="tsd-kind-icon">validate<wbr>Npc<wbr>Gender</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#validateweight" class="tsd-kind-icon">validate<wbr>Weight</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#wagevariation" class="tsd-kind-icon">wage<wbr>Variation</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#weightrandom" class="tsd-kind-icon">weight<wbr>Random</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#weightedrandomfetcher" class="tsd-kind-icon">weighted<wbr>Random<wbr>Fetcher</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
